@@ -1,0 +1,447 @@
+1. WWW and Web Development
+- What is the World Wide Web (WWW) and how does it differ from the internet?
+World Wide Web (WWW):
+
+A collection of web pages and resources linked together via hyperlinks, accessed through web browsers.
+
+Uses the HTTP/HTTPS protocols to fetch and display content.
+
+Example: Websites like Google, YouTube, or Wikipedia are part of the WWW.
+
+Internet:
+
+The global network of interconnected computers that allows communication and data exchange.
+
+It is the infrastructure (cables, routers, servers, protocols) that supports many services, including:
+
+--Email
+
+--File transfer (FTP)
+
+--Online games
+
+--And the WWW
+- Explain the basic structure of a web page. What are the essential elements?
+A web page is usually an HTML document interpreted by browsers. The basic structure:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Page</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>This is my first web page.</p>
+</body>
+</html>
+Essential elements:
+
+<!DOCTYPE html> → Defines the document type (HTML5 here).
+
+<html> → Root element of the page.
+
+<head> → Metadata: title, styles, links, scripts.
+
+<title> → Title shown on browser tab.
+
+<body> → Visible content (headings, text, images, links, forms, etc).
+
+- What is the role of HTML, CSS, and JavaScript in web development?
+HTML (HyperText Markup Language):
+
+The structure & content of a webpage.
+
+Defines text, images, links, forms, tables, etc.
+
+Think of it as the skeleton.
+
+CSS (Cascading Style Sheets):
+
+The design & presentation.
+
+Controls layout, colors, fonts, responsiveness.
+
+Think of it as the skin & clothing.
+
+JavaScript (JS):
+
+The behavior & interactivity.
+
+Adds dynamic elements: sliders, form validation, animations, real-time updates.
+
+Think of it as the muscles & brain.
+
+- Describe the difference between static and dynamic web pages.
+Static Web Pages:
+
+Content is fixed and same for every visitor.
+
+Written in HTML/CSS only.
+
+No server interaction except serving files.
+
+Example: A company’s “About Us” page.
+
+Dynamic Web Pages:
+
+Content changes based on user interaction or backend processing.
+
+Generated using server-side code (PHP, Node.js, Python, etc) or client-side JavaScript.
+
+Example: Facebook feed, Gmail inbox, e-commerce product pages.
+
+2. Web Applications and Types of Web Applications
+- What is a web application, and how does it differ from a website?
+Website:
+
+A collection of interlinked static or dynamic web pages accessible via a domain.
+
+Usually informational (blogs, company sites, portfolios).
+
+Interaction is minimal (just browsing and reading).
+
+Web Application:
+
+A program that runs on a web browser, offering interactive functionality similar to desktop/mobile apps.
+
+Often connected to a backend server and a database.
+
+Examples: Gmail, Facebook, Google Docs, Online Banking.
+
+A website is mainly for displaying information.
+
+A web application is for performing tasks and interactions.
+
+- Name and describe three different types of web applications.
+--Static Web Applications
+
+Pre-built HTML, CSS, JS files served directly by the server.
+
+Content doesn’t change unless the developer updates it.
+
+Fast & cheap to host.
+
+Example: Portfolio websites, landing pages.
+--Dynamic Web Applications
+
+Content changes dynamically based on user actions or server logic.
+
+Uses databases and server-side scripting (PHP, Python, Node.js, etc).
+
+Example: E-commerce sites (Amazon), social media (Instagram).
+
+--Single Page Applications (SPA)
+
+Loads a single HTML page and dynamically updates content via JavaScript (AJAX / APIs).
+
+Doesn’t reload the entire page.
+
+Example: Gmail, Google Maps, React/Angular apps.
+
+- What are the advantages and disadvantages of Single Page Applications (SPAs) compared to Multi-Page Applications (MPAs)?
+--Advantages of SPA
+
+Fast and responsive (no full page reload).
+
+Better user experience (smooth transitions).
+
+Backend can be exposed as API (easier for mobile app integration).
+
+Efficient development with modern frameworks (React, Angular, Vue).
+
+--Disadvantages of SPA
+
+SEO challenges (since content loads dynamically).
+
+Initial load time may be slower (loads large JS bundles).
+
+Browser performance issues if poorly optimized.
+
+Requires more client-side scripting knowledge.
+
+--Advantages of MPA
+
+Better SEO support (each page has its own URL and metadata).
+
+Works well for large-scale websites (blogs, e-commerce).
+
+Easier to design role-based access and structured content.
+
+--Disadvantages of MPA
+
+Every page change = full reload (slower).
+
+Heavier on server resources.
+
+Complex to maintain as the number of pages grows.
+
+SPA = Fast, app-like experience, good for interactive apps (but SEO & initial load can suffer).
+
+MPA = Traditional, SEO-friendly, good for content-heavy sites (but slower navigation).
+
+3. Web Client and Web Server
+- What is a web client, and how does it interact with a web server?
+--Web Client:
+
+The end-user application that requests and displays web content.
+
+Most commonly a web browser (Chrome, Firefox, Safari, Edge), but can also be mobile apps or other software using HTTP.
+
+It sends HTTP/HTTPS requests to the server and renders the responses (HTML, CSS, JS).
+
+--Interaction Process (Client ↔ Server):
+
+User types a URL or clicks a link.
+
+Client (browser) sends an HTTP request to the server.
+
+Server processes the request and sends back an HTTP response (HTML, data, images, JSON).
+
+Browser interprets the response and displays the web page.
+
+- Explain the role of a web server in delivering web content to users.
+A Web Server is software (and sometimes hardware) that:
+
+Stores, processes, and delivers web content (HTML, CSS, JS, images, videos).
+
+Uses HTTP/HTTPS protocols to communicate with clients.
+
+Can serve static files (plain HTML, CSS) or forward requests to server-side applications (for dynamic content).
+
+Examples of Web Servers:
+
+Apache HTTP Server
+
+Nginx
+
+Microsoft IIS
+
+LiteSpeed
+
+- What is the purpose of a server-side language, and how does it differ from a client-side language?
+Server-Side Language:
+
+Runs on the server, before content is sent to the client.
+
+Handles business logic, database queries, authentication, dynamic page generation.
+
+Examples: PHP, Python (Django/Flask), Node.js, Ruby, Java, .NET (C#).
+
+Client-Side Language:
+
+Runs in the user’s browser (client) after the page is loaded.
+
+Handles UI interaction, animations, validations, dynamic updates without reloading.
+
+Example: JavaScript, along with HTML & CSS.
+
+5. HTTP and HTTP Methods
+- What is HTTP, and why is it essential for web communication?
+HTTP (HyperText Transfer Protocol):
+
+A protocol (set of rules) used for communication between web clients (browsers) and web servers.
+
+Defines how requests and responses are formatted and transmitted.
+
+Why Essential?
+
+It is the foundation of data exchange on the Web.
+
+Without HTTP/HTTPS, browsers wouldn’t know how to request pages, and servers wouldn’t know how to respond.
+
+Provides a stateless, standard communication method for transferring text, images, videos, APIs, etc.
+
+Works on port 80 (or 443 when using HTTPS with encryption).
+- List and describe the different HTTP methods (e.g., GET, POST, PUT, DELETE). When should each be used?
+
+ommon HTTP Methods & Their Uses
+--GET
+
+Requests data from a server (read-only).
+
+Parameters are sent in the URL query string.
+
+Idempotent (multiple requests = same result).
+
+Use when: Retrieving information.
+
+Example: GET /products?id=10
+
+--POST
+
+Sends data to the server to create a new resource.
+
+Data is sent in the request body.
+
+Not idempotent (multiple requests may create multiple records).
+
+Use when: Submitting forms, uploading files, creating records.
+
+Example: POST /users with JSON body {"name":"John","email":"john@example.com"}
+
+--PUT
+
+Sends data to the server to update/replace an existing resource.
+
+Entire resource is usually replaced.
+
+Idempotent (repeated calls have the same effect).
+
+Use when: Updating a full record.
+
+Example: PUT /users/10 with JSON body {"name":"Jane","email":"jane@example.com"}
+
+--PATCH
+
+Similar to PUT but only partially updates a resource.
+
+Use when: Updating a single field of a record.
+
+Example: PATCH /users/10 with {"email":"new@example.com"}
+
+--DELETE
+
+Removes a resource from the server.
+
+Idempotent (repeated calls delete the same resource).
+
+Use when: Deleting data.
+
+Example: DELETE /users/10
+
+-How does the HTTP request-response cycle work?
+--Client sends a request:
+
+Browser sends an HTTP request with:
+
+Method (GET/POST/PUT/DELETE, etc)
+
+URL (resource path)
+
+Headers (metadata like User-Agent, Accept, Content-Type)
+
+Body (if POST/PUT/PATCH)
+
+--Server processes request:
+
+Web server receives the request.
+
+Passes it to the application logic (backend + database).
+
+Generates a response.
+
+--Server sends a response:
+
+Status code (200 OK, 404 Not Found, 500 Server Error, etc).
+
+Headers (e.g., Content-Type: text/html).
+
+Body (HTML, JSON, image, etc).
+
+--Client (browser) renders the response:
+
+HTML → Displayed as a page.
+
+JSON → Used by JS for dynamic content.
+
+File → Downloaded/opened.
+
+6. HTTPS vs HTTP
+
+- What is HTTPS, and how does it differ from HTTP?
+HTTP (HyperText Transfer Protocol):
+
+A protocol for transferring web data (HTML, CSS, JS, images, etc.) between a client (browser) and a web server.
+
+Unencrypted → Data is sent in plain text, which makes it vulnerable to eavesdropping or tampering.
+
+HTTPS (HyperText Transfer Protocol Secure):
+
+An encrypted version of HTTP that uses SSL/TLS for security.
+
+Ensures that the communication between client and server is encrypted, authenticated, and secure.
+
+Uses port 443 (instead of 80 for HTTP).
+
+Key Difference:
+
+HTTP = Data in plain text (insecure).
+
+HTTPS = Data encrypted using SSL/TLS (secure).
+
+- Why is HTTPS important for modern web applications, and what role does SSL/TLS play?
+--Encryption (Confidentiality):
+
+Prevents hackers from intercepting sensitive data like passwords, credit card numbers, or personal details.
+
+--Data Integrity:
+
+Ensures data isn’t altered during transmission.
+
+--Authentication:
+
+Validates the server’s identity (via digital certificates), so users know they are connecting to the legitimate site.
+
+--User Trust:
+
+Browsers show a padlock icon for HTTPS sites, increasing trust.
+
+Modern browsers warn users if a site isn’t secure.
+
+--SEO Benefits:
+
+Google ranks HTTPS websites higher than HTTP ones.
+
+--Requirement for Modern Features:
+
+Many APIs and browser features (like geolocation, push notifications, service workers) require HTTPS.
+
+7. HTTP Status Codes
+
+- What are HTTP status codes, and why are they important?
+HTTP status codes are 3-digit numbers sent by a web server in response to a client’s request.
+
+They indicate whether the request was successful, resulted in an error, or requires further action.
+
+Why important?
+
+Help developers and users understand what happened with a request.
+
+Used in debugging, SEO, and user experience.
+
+Example: A 404 Not Found tells the page doesn’t exist, while 200 OK means everything worked.
+
+- List and explain the meaning of the following HTTP status codes: 200, 301, 404, 500.
+--200 OK
+
+The request was successful.
+
+The server returns the requested data (HTML, JSON, file, etc).
+
+Example: Viewing a web page normally.
+
+--301 Moved Permanently
+
+The requested resource has been permanently moved to a new URL.
+
+The server provides the new location in the response header (Location:).
+
+Commonly used for URL redirection (e.g., from http:// to https://).
+
+Important for SEO, since search engines update their index to the new location.
+
+--404 Not Found
+
+The requested resource does not exist on the server.
+
+Commonly shown when a user visits a broken or incorrect link.
+
+Example: Typing example.com/abcxyz where no such page exists.
+
+--500 Internal Server Error
+
+A generic error from the server indicating something went wrong.
+
+Could be due to misconfigured code, database errors, or server crashes.
+
+Doesn’t reveal specific details (for security reasons).

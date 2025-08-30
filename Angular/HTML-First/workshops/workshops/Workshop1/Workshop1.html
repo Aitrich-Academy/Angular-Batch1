@@ -1,38 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>HTML Basic</title>
-	<!-- HTML <meta> tag is used to represent the metadata about the HTML document. It specifies page description, keywords, copyright, language, author of the documents -->
-	<meta charset="utf-8"> <!-- It defines the character encoding. The value of charset is "utf-8" which means it will support to display any language. -->
-    <meta name="keywords" content="HTML"> <!-- It specifies the list of keyword which is used by search engines  -->
-    <meta name="description" content="HTML Basics"><!--  It defines the website description which is useful to provide relevant search performed by search engines. -->
-    <meta name="author" content="Soudha">  <!-- It specifies the author of the page. It is useful to extract author information by Content management system automatically. -->  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Me Now! — Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; color:#222; background:#fafafa; }
+    a { text-decoration: none; color: inherit; }
+    header, footer { border-top: 2px solid #000; border-bottom: 2px solid #000; }
+
+    /* Header */
+    .topbar { display:flex; justify-content:space-between; align-items:center; padding:16px 40px; }
+    .logo { font-weight:700; font-size:18px; }
+    nav a { margin:0 10px; font-size:14px; }
+
+    /* Hero */
+    .hero { max-width:800px; margin:60px auto; text-align:left; padding:0 20px; }
+    .hero h1 { font-size:42px; margin-bottom:20px; }
+    .hero p { color:#666; font-size:16px; }
+
+    /* Categories */
+    .categories { text-align:center; margin:80px auto; }
+    .categories h2 { font-size:20px; margin-bottom:10px; }
+    .categories p { color:#444; margin-bottom:40px; }
+    .cat-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:20px; max-width:800px; margin:0 auto; }
+    .cat-grid div { font-weight:700; }
+
+    /* Footer */
+    footer { background:#fff; padding:40px; margin-top:40px; }
+    .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr 1fr; gap:20px; max-width:1000px; margin:0 auto; }
+    .footer-top h4 { margin-bottom:10px; font-size:15px; }
+    .footer-top ul { list-style:none; padding:0; margin:0; }
+    .footer-top li { margin:6px 0; }
+    .legal { border-top:1px solid #ccc; margin-top:20px; padding-top:10px; display:flex; justify-content:space-between; font-size:13px; color:#666; }
+    .brand p { color:#777; font-size:14px; }
+  </style>
 </head>
-<body bgcolor="#fefefa"><!--bgcolor attribute is used to set the background color of an HTML element
- The <pre> tag defines preformatted text.-->    
-                <pre><!-- The <font> tag was used in HTML 4 to specify the font face, font size, and color of text-->                 <font size="5px"> <b>Hire Me Now!</b></font>                         Home                  Post A Job               About            Feature                Login|SignUp</pre>
-               <!-- The <br> tag inserts a single line break -->
-               <br>
-   
-           <pre>                        <div align="left" width="200px" height="300px"><b> <font size="7%" face="Sans-serif">
-         The Best Place
-         to Find your   
-         dream company</b> <div><p> </font><font size="3%" color="gray"face="Sans-serif">                       Ideal  platform  for  job  seekers  passionate  about 
-                          startups  and  seeking  new  career  opportunities.</font></p></div></div>
-    </div></pre>
-   <font face="Sans-serif"><h2 align="Center">Explore by category</h1>
-   <p align="center">Open the doors to endless career possibilities <br>
-    and find your dream job with ease</p>
-</font><br>
-<strong>          <pre>              <font face="Sans-serif">                                  Development                                  Bussines                                  Data Analyst                                  Design</font></pre>
-<br>
-                    <pre>              <font face="Sans-serif">                                  Finance                               Human Resource                            Content Writing                               Explore More </font></pre>
-<strong>
-<br>
-     <br><br>
-     <hr color="#74a1b6">
-    </body>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="topbar">
+      <div class="logo">Hire Me Now!</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Post A Job</a>
+        <a href="#">About</a>
+        <a href="#">Feature</a>
+        <a href="#">Login</a> | <a href="#">SignUp</a>
+      </nav>
+    </div>
+  </header>
 
-<br>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>The Best Place<br>to Find your<br>dream company</h1>
+    <p>Ideal platform for job seekers passionate about startups and seeking new career opportunities.</p>
+  </section>
 
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Explore by category</h2>
+    <p>Open the doors to endless career possibilities and find your dream job with ease</p>
+    <div class="cat-grid">
+      <div>Development</div>
+      <div>Bussines</div>
+      <div>Data Analyst</div>
+      <div>Design</div>
+      <div>Finance</div>
+      <div>Human Resource</div>
+      <div>Content Writing</div>
+      <div>Explore More</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="brand">
+        <h3>Hire Me Now!</h3>
+        <p>Ideal platform for job seekers passionate about startups and seeking new career opportunities.</p>
+      </div>
+      <div>
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">AboutUs</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service</h4>
+        <ul>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">UI Design</a></li>
+          <li><a href="#">Developer</a></li>
+          <li><a href="#">Accountant</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <div>Terms & Conditions | <a href="#">Privacy Policy</a></div>
+      <div>Copyright © 2023. All right reserved</div>
+    </div>
+  </footer>
+</body>
 </html>

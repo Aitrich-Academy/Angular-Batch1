@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Activities</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+  <!-- Navigation Menu -->
+  <h1 align="center">HTML Form Activities</h1>
+  <p align="center">
+    <a href="#contact">Contact Form</a> |
+    <a href="#options">Preferred Options</a> |
+    <a href="#pizza">Pizza Order</a>
+  </p>
+  <hr>
+
+  <!-- Contact Form Section -->
+  <h2 id="contact">1. Contact Form</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  <hr>
+
+  <!-- Preferred Options Section -->
+  <h2 id="options">2. Preferred Options</h2>
+  <form>
+    <h3>Programming Languages (choose any):</h3>
+    <input type="checkbox" name="lang" value="HTML"> HTML<br>
+    <input type="checkbox" name="lang" value="CSS"> CSS<br>
+    <input type="checkbox" name="lang" value="JavaScript"> JavaScript<br>
+    <input type="checkbox" name="lang" value="Python"> Python<br><br>
+
+    <h3>Preferred Operating System (choose one):</h3>
+    <input type="radio" name="os" value="Windows"> Windows<br>
+    <input type="radio" name="os" value="Linux"> Linux<br>
+    <input type="radio" name="os" value="Mac"> Mac<br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  <hr>
+
+  <!-- Pizza Order Section -->
+  <h2 id="pizza">3. Pizza Order</h2>
+  <form>
+    <label for="size">Pizza Size:</label>
+    <select id="size" name="size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select><br><br>
+
+    <label for="crust">Crust Type:</label>
+    <select id="crust" name="crust">
+      <option value="thin">Thin</option>
+      <option value="thick">Thick</option>
+      <option value="stuffed">Stuffed</option>
+    </select><br><br>
+
+    <label for="toppings">Toppings:</label>
+    <select id="toppings" name="toppings" multiple>
+      <option value="cheese">Cheese</option>
+      <option value="pepperoni">Pepperoni</option>
+      <option value="mushrooms">Mushrooms</option>
+      <option value="onions">Onions</option>
+    </select><br><br>
+
+    <input type="submit" value="Place Order">
+  </form>
+  <hr>
+
+  <!-- Footer -->
+  <p align="center"><b>Created for HTML 4 Activity | © 2025</b></p>
+
+</body>
+</html>

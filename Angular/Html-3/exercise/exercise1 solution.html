@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - Settings</title>
+</head>
+<body style="margin:0; font-family: Arial, sans-serif; background:#f8f9fa;">
+
+  <!-- Sidebar -->
+  <div style="width:220px; background:#e9ecef; height:100vh; position:fixed; left:0; top:0; padding:20px; box-shadow:2px 0 5px rgba(0,0,0,0.1);">
+    <div style="text-align:center; margin-bottom:30px;">
+      <div style="width:70px; height:70px; border-radius:50%; background:#6c63ff; display:flex; align-items:center; justify-content:center; margin:auto; color:#fff; font-size:30px;">👤</div>
+      <p style="margin-top:10px; font-weight:bold;">Admin</p>
+    </div>
+    <a href="#" style="display:block; padding:10px; color:#6c63ff; text-decoration:none; font-weight:bold;">_Overview</a>
+    <a href="#" style="display:block; padding:10px; color:#333; text-decoration:none;">Cards</a>
+    <a href="#" style="display:block; padding:10px; color:#333; text-decoration:none;">Transaction</a>
+    <a href="#" style="display:block; padding:10px; color:#333; text-decoration:none;">Invoicing</a>
+    <a href="#" style="display:block; padding:10px; color:#333; text-decoration:none;">Report</a>
+    <a href="#" style="display:block; padding:10px; color:#333; text-decoration:none;">Payment</a>
+    <a href="#" style="display:block; padding:10px; color:#333; text-decoration:none;">Settings</a>
+    <br><br>
+    <button style="padding:8px 15px; background:#dc3545; color:#fff; border:none; border-radius:5px; cursor:pointer;">Logout</button>
+  </div>
+
+  <!-- Main Content -->
+  <div style="margin-left:240px; padding:20px;">
+    <h2 style="color:#333; margin-bottom:5px;">Welcome, <span style="color:#6c63ff;">Admin</span></h2>
+    <p style="color:#777; font-size:14px; margin-top:0;">5 - 04 - 2023</p>
+
+    <h3 style="margin-top:20px;">General Settings</h3>
+    <p style="color:#555; font-size:14px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <p>
+      <a href="#" style="color:#6c63ff; text-decoration:none; margin-right:15px;">Account</a>
+      <a href="#" style="color:#6c63ff; text-decoration:none; margin-right:15px;">Notifications</a>
+      <a href="#" style="color:#6c63ff; text-decoration:none;">Billing</a>
+    </p>
+
+    <hr style="margin:20px 0;">
+
+    <form>
+      <div style="display:flex; gap:40px;">
+        <!-- Basic Info -->
+        <div style="flex:1;">
+          <h4>Basic Information</h4>
+          <p style="font-size:13px; color:#666;">Lorem Ipsum is simply dummy text.</p>
+          <label>Full Name:</label><br>
+          <input type="text" placeholder="Enter full name" style="width:90%; padding:8px; margin:5px 0;"><br>
+          <label>Email:</label><br>
+          <input type="email" placeholder="Enter email" style="width:90%; padding:8px; margin:5px 0;"><br>
+          <label>About Bibliography:</label><br>
+          <textarea rows="5" style="width:90%; padding:8px; margin:5px 0;"></textarea>
+        </div>
+
+        <!-- More Info -->
+        <div style="flex:1;">
+          <h4>More Information</h4>
+          <p style="font-size:13px; color:#666;">Lorem Ipsum is simply dummy text.</p>
+          <label>Phone No:</label><br>
+          <input type="text" placeholder="Enter phone number" style="width:90%; padding:8px; margin:5px 0;"><br>
+          <label>Role:</label><br>
+          <input type="text" placeholder="Enter role" style="width:90%; padding:8px; margin:5px 0;"><br>
+          <label>Location:</label><br>
+          <input type="text" placeholder="Enter location" style="width:90%; padding:8px; margin:5px 0;"><br>
+          <label>Website:</label><br>
+          <input type="text" placeholder="Enter website" style="width:90%; padding:8px; margin:5px 0;">
+        </div>
+      </div>
+
+      <br>
+      <label>Upload Profile:</label>
+      <input type="file" style="margin:10px 0;"><br><br>
+
+      <button type="submit" style="padding:10px 20px; background:#6c63ff; color:white; border:none; border-radius:5px; cursor:pointer;">
+        Save Changes
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>

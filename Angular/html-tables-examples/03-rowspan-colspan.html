@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rowspan and Colspan</title>
+  <style>
+    body{font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; }
+    table{border: 1px solid #ccc; border-collapse: collapse; width: 100%; max-width: 680px;}
+    th, td{border: 1px solid #ccc; padding: .5rem .75rem; text-align: left;}
+    caption{caption-side: top; font-weight: 600; margin-bottom: .5rem;}
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Interview Schedule</caption>
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">Company</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Mon</td>
+        <td>TCS</td>
+        <td>Java Developer</td>
+      </tr>
+      <tr>
+        <td>Microsoft</td>
+        <td>.NET Developer</td>
+      </tr>
+      <tr>
+        <td>Tue</td>
+        <td colspan="2">Career Fair (All Roles)</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

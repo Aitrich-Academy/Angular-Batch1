@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Table</title>
+  <style>
+    body{font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; }
+    .table-wrap{ overflow-x: auto; }
+    table{ border: 1px solid #ccc; border-collapse: collapse; min-width: 600px; }
+    th, td{ border: 1px solid #ccc; padding: .5rem .75rem; text-align: left; }
+    caption{caption-side: top; font-weight: 600; margin-bottom: .5rem;}
+  </style>
+</head>
+<body>
+  <div class="table-wrap">
+    <table>
+      <caption>Large Dataset (Scrollable on small screens)</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">City</th>
+          <th scope="col">Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">1</th><td>Alex</td><td>alex@example.com</td><td>Pune</td><td>India</td></tr>
+        <tr><th scope="row">2</th><td>Sam</td><td>sam@example.com</td><td>Berlin</td><td>Germany</td></tr>
+        <tr><th scope="row">3</th><td>Ling</td><td>ling@example.com</td><td>Beijing</td><td>China</td></tr>
+        <tr><th scope="row">4</th><td>Carla</td><td>carla@example.com</td><td>Santiago</td><td>Chile</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

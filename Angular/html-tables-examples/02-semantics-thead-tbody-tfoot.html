@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Sections</title>
+  <style>
+    body{font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; }
+    table{border: 1px solid #ccc; border-collapse: collapse; width: 100%; max-width: 720px;}
+    th, td{border: 1px solid #ccc; padding: .5rem .75rem; text-align: left;}
+    tfoot td{font-weight: 600; background: #fafafa;}
+    caption{caption-side: top; font-weight: 600; margin-bottom: .5rem;}
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Quarterly Sales</caption>
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Q1</th>
+        <th scope="col">Q2</th>
+        <th scope="col">Q3</th>
+        <th scope="col">Q4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Widget A</th>
+        <td>120</td><td>140</td><td>160</td><td>200</td>
+      </tr>
+      <tr>
+        <th scope="row">Widget B</th>
+        <td>80</td><td>90</td><td>110</td><td>130</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td><td>200</td><td>230</td><td>270</td><td>330</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Table</title>
+  <style>
+    body{font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; }
+    table{border: 1px solid #ccc; border-collapse: collapse; width: 100%; max-width: 760px;}
+    th, td{border: 1px solid #ccc; padding: .5rem .75rem; text-align: left;}
+    caption{caption-side: top; font-weight: 600; margin-bottom: .5rem;}
+    .sr-only{ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Nutrition Facts per Serving</caption>
+    <thead>
+      <tr>
+        <th scope="col">Nutrient</th>
+        <th scope="col">Amount</th>
+        <th scope="col">% Daily Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Energy</th>
+        <td>210 kcal</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <th scope="row">Protein</th>
+        <td>6 g</td>
+        <td>12%</td>
+      </tr>
+      <tr>
+        <th scope="row">Sodium</th>
+        <td>180 mg</td>
+        <td>8%</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="sr-only">Tip: use <code>scope</code> on &lt;th&gt; and a &lt;caption&gt; to help screen reader users.</p>
+</body>
+</html>

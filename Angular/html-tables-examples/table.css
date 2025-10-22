@@ -1,0 +1,20 @@
+/* A tiny, modern table stylesheet that replaces old HTML attributes */
+:root{
+  --border: #d5d7da;
+  --row-alt: #fafafa;
+}
+body{ font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; }
+.table{ border-collapse: collapse; width: 100%; max-width: 800px; }
+.table caption{ caption-side: top; font-weight: 600; margin-bottom: .5rem; }
+.table th, .table td{ border: 1px solid var(--border); padding: .625rem .75rem; text-align: left; vertical-align: middle;}
+.table--striped tbody tr:nth-child(odd){ background: var(--row-alt); }
+.table--hover tbody tr:hover{ outline: 3px solid rgba(0,0,0,.05); }
+.table th[scope="row"]{ font-weight: 600; }
+
+/* Old attribute mapping (for teaching):
+   border       -> .table { border, border-collapse }
+   cellpadding  -> th, td { padding }
+   cellspacing  -> .table { border-collapse } OR table { border-spacing: X }
+   align        -> th, td { text-align }
+   valign       -> th, td { vertical-align }
+*/

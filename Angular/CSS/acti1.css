@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.italic {
+  font-style: italic;
+}

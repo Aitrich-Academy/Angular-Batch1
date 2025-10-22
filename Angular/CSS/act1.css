@@ -1,0 +1,28 @@
+body {
+  background-color: #ccc; 
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  background-color: #a8e6f0; 
+  border: 3px solid #000;
+  margin: 100px auto; 
+  
+  
+  background-image: url('top-story.jpg'); 
+  background-repeat: no-repeat;    
+  background-position: right center;
+  background-size: 100px auto;     
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+}

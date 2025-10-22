@@ -1,0 +1,25 @@
+   #head2 {
+      color: red;
+      font-size: 25px;
+    }
+
+    .head3 {
+      background-color: lightgray;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1, h2, h3, p {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-weight: bold;
+      word-spacing: 30px;
+      text-indent: 50px;
+      
+    }
+
+    body {
+      background-image: url('Untitled.png');
+    }

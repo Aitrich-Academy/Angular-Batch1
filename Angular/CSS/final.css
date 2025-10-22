@@ -1,0 +1,58 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container divides sidebar and main content */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #3366cc;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Buttons inside sidebar */
+.menu-item {
+  background-color: #ffffff;
+  color: #0066cc;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #004080;
+  color: white;
+}
+
+.active {
+  background-color: #004080;
+  color: white;
+}
+
+.content {
+  background-color: #ccc;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: darkred;
+  font-size: 32px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}

@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center; 
+}
+
+.box {
+  width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: black;
+}
+
+
+.green {
+  background-color: #33cc33; /* Green */
+}
+
+.red {
+  background-color: #ff3333; /* Red */
+  color: black;
+}
+
+.yellow {
+  background-color: #ffff33; /* Yellow */
+}

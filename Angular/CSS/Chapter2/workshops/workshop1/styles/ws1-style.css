@@ -192,3 +192,127 @@
     display: none;
 }
 
+/* RIGHT PANEL */
+.right {
+    width: 520px;
+    margin-left: 30px;
+}
+
+.details-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 6px 1px #81838bd1;
+    overflow: hidden;
+    min-height: 520px;
+}
+
+.cover {
+    height: 140px;
+    background: linear-gradient(135deg, #cfe9ff 0%, #eaf3ff 50%, #c9e6ff 100%);
+}
+
+.details-logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -36px;
+}
+
+.details-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.company-name {
+    text-align: center;
+    margin: 10px 0 0;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.role-name {
+    text-align: center;
+    margin: 6px 0 16px;
+    color: #3487bf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 16px;
+    padding: 0 18px 8px;
+}
+
+.badge {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.badge-title {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.badge-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111827;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.salary-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.badge.salary {
+    min-width: 210px;
+    border-radius: 12px;
+}
+
+.company-section {
+    padding: 8px 22px 22px;
+}
+
+.company-chip {
+    display: inline-block;
+    margin: 10px auto 8px;
+    padding: 6px 14px;
+    border-radius: 18px;
+    background: #f3f4f6;
+    font-weight: 700;
+    color: #111827;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.company-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #374151;
+    text-align: justify;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .right {
+        width: auto;
+        margin: 20px 10px 0;
+    }
+}

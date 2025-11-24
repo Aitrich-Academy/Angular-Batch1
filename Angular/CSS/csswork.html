@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform & Animation Activities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .demo-box {
+      margin: 15px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      display: inline-block;
+    }
+
+    /***********************
+     1. Rotate a Box
+    ************************/
+    .rotate-box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transition: transform 0.5s;
+    }
+    .rotate-box:hover {
+      transform: rotate(45deg);
+    }
+
+    /***********************
+     2. Scale on Hover (Image)
+    ************************/
+    .scale-image {
+      width: 150px;
+      height: 150px;
+      transition: transform 0.5s;
+      object-fit: cover;
+    }
+    .scale-image:hover {
+      transform: scale(1.2);
+    }
+
+    /***********************
+     3. Skew an Element (Button)
+    ************************/
+    .skew-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff9800;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .skew-button:hover {
+      transform: skewX(15deg) skewY(5deg);
+    }
+
+    /***********************
+     4. Translate an Element
+    ************************/
+    .translate-box {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+      transition: transform 0.5s;
+    }
+    .translate-box:hover {
+      transform: translate(100px, 50px);
+    }
+
+    /***********************
+     5. 3D Rotation (Card)
+    ************************/
+    .card-container {
+      perspective: 800px;
+    }
+    .card {
+      width: 200px;
+      height: 120px;
+      background-color: #2196f3;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .card-container:hover .card {
+      transform: rotateY(180deg);
+    }
+
+    /***********************
+     6. Color Change on Hover (Transition)
+    ************************/
+    .color-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.5s;
+    }
+    .color-button:hover {
+      background-color: #f44336;
+    }
+
+    /***********************
+     7. Smooth Size Transition
+    ************************/
+    .size-box {
+      width: 100px;
+      height: 100px;
+      background-color: #9c27b0;
+      transition: width 0.5s, height 0.5s;
+    }
+    .size-box:hover {
+      width: 150px;
+      height: 150px;
+    }
+
+    /***********************
+     8. Border Animation
+    ************************/
+    .border-box {
+      width: 150px;
+      height: 80px;
+      background-color: #eee;
+      border: 2px solid #000;
+      transition: border-color 0.5s, border-width 0.5s;
+    }
+    .border-box:hover {
+      border-color: red;
+      border-width: 6px;
+    }
+
+    /***********************
+     9. Button Hover Effect (bg + font-size)
+    ************************/
+    .hover-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.4s, font-size 0.4s;
+    }
+    .hover-button:hover {
+      background-color: #673ab7;
+      font-size: 18px;
+    }
+
+    /***********************
+     10. Bouncing Ball (@keyframes)
+    ************************/
+    .ball {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ff5722;
+      position: relative;
+      animation: bounce 1s infinite ease-in-out;
+    }
+    @keyframes bounce {
+      0%   { top: 0; }
+      50%  { top: 50px; }
+      100% { top: 0; }
+    }
+
+    /***********************
+     11. Loading Spinner
+    ************************/
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 6px solid #ccc;
+      border-top-color: #2196f3;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /***********************
+     12. Sliding Text
+    ************************/
+    .slide-text {
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      animation: slide-in 2s forwards;
+    }
+    @keyframes slide-in {
+      0% {
+        left: -200px;
+        opacity: 0;
+      }
+      100% {
+        left: 0;
+        opacity: 1;
+      }
+    }
+
+    /***********************
+     13. Pulse Effect (circle with scale)
+    ************************/
+    .pulse-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #e91e63;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Transform & Animation Activities</h1>
+
+  <h2>1. Rotate a Box (hover)</h2>
+  <div class="demo-box">
+    <div class="rotate-box"></div>
+  </div>
+
+  <h2>2. Scale on Hover (Image)</h2>
+  <div class="demo-box">
+    <img class="scale-image" src="https://via.placeholder.com/150" alt="Placeholder">
+  </div>
+
+  <h2>3. Skew an Element (Button)</h2>
+  <div class="demo-box">
+    <button class="skew-button">Skew Me</button>
+  </div>
+
+  <h2>4. Translate an Element</h2>
+  <p>Hover over the box to move it 100px right and 50px down.</p>
+  <div class="demo-box">
+    <div class="translate-box"></div>
+  </div>
+
+  <h2>5. 3D Rotation (Card)</h2>
+  <div class="demo-box card-container">
+    <div class="card">3D Card</div>
+  </div>
+
+  <h2>6. Color Change on Hover (Transition)</h2>
+  <div class="demo-box">
+    <button class="color-button">Hover to Change Color</button>
+  </div>
+
+  <h2>7. Smooth Size Transition</h2>
+  <div class="demo-box">
+    <div class="size-box"></div>
+  </div>
+
+  <h2>8. Border Animation</h2>
+  <div class="demo-box">
+    <div class="border-box"></div>
+  </div>
+
+  <h2>9. Button Hover Effect (Background & Font Size)</h2>
+  <div class="demo-box">
+    <button class="hover-button">Hover Me</button>
+  </div>
+
+  <h2>10. Bouncing Ball (@keyframes)</h2>
+  <div class="demo-box">
+    <div class="ball"></div>
+  </div>
+
+  <h2>11. Loading Spinner</h2>
+  <div class="demo-box">
+    <div class="spinner"></div>
+  </div>
+
+  <h2>12. Sliding Text</h2>
+  <div class="demo-box">
+    <div class="slide-text">I slide in from the left!</div>
+  </div>
+
+  <h2>13. Pulse Effect</h2>
+  <div class="demo-box">
+    <div class="pulse-circle"></div>
+  </div>
+
+</body>
+</html>

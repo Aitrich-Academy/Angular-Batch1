@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation-Fill-Mode</title>
+  <style>
+    .fill {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position:relative;
+      animation-name: move;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: none;
+      animation-delay: 3s;
+    }
+    @keyframes move {
+      0% {
+        left: 0;
+        top: 0;
+        background-color: rgb(255, 0, 140);
+      }
+      100% {
+        left: 200px;
+        top: 0;
+        background-color: rgb(255, 213, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fill">
+
+  </div>
+</body>
+</html>
